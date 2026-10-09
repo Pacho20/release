@@ -67,6 +67,8 @@ tests:
   optional: true
   steps:
     cluster_profile: ibmcloud
+    env:
+      SIZE_VARIANT: medium
     workflow: openshift-e2e-ibmcloud
 - as: regression-clusterinfra-ibmcloud-ipi-mapi
   optional: true
